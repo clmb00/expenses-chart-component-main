@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+@import "@fontsource/dm-sans/400";
+@import "@fontsource/dm-sans/700";
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: $font_size;
+  background-color: $neutral_l;
+}
+
+@media screen and (max-width: 440px) {
+
+  body {
+    font-size: $font_size - 3px;
+  }
+
+}
